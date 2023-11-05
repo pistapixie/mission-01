@@ -1,0 +1,193 @@
+/* 전체 페이지의 배경색 */
+body {
+  background: #F5F5F5;
+}
+/* h2요소의 기본 여백 제거 */
+h2 {
+  margin: 0;
+}
+/* 전체 카드들을 가운데 정렬 */
+.cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* 꿀생강차 카드 전체  */
+.ottogi-honeyGtea-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* 버튼의 부모요소 역할 */
+  position: relative;
+  background: var(--White, #FFF);
+  box-sizing: border-box;
+  border: 1px solid var(--gray-500, #C4C4C4);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 502px;
+  height: 301px;
+  /* transition: border 0.3s; */
+}
+/* hover시 카드 border 전환  */
+.ottogi-honeyGtea-card:hover {
+  transition: border 0.3s;
+  border: 1px solid #0074E9;
+}
+/* 꿀생강차 로고와 제목 가운데 정렬 */
+.honeyGtea-logo-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+/* 오뚜기 로고에 마진 추가로 제목과의 간격 조절 */
+.ottogi-logo{
+  margin-bottom: 20px;
+}
+/* 꿀생강차 제목 텍스트 스타일 */
+.honeyGtea-title{
+  font: 700 24px Noto Sans, sans-serif;
+  color: var(--gray-800, #4E4E4E);
+}
+/* 꿀생강차 이미지 위치 조정 */
+.honeyGtea{
+  /* position: absolute; */
+  margin-left: 40px;
+}
+/* 꿀생강차 버튼 스타일링 */
+.button-hTea {
+  width: 42px;
+  height: 42px;
+  background: #CCCCCC;
+  
+  color: #FFF;
+  /* 이해 안 되는 부분 */
+  /* font: 100 20px; */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: width 0.3s;
+  /* transform-origin: left; */
+  position: absolute;
+  left: 20px;
+  top: 245px;
+}
+/* 꿀생강차 버튼의 호버 효과 -배경색과 크기 변경*/
+.button-hTea:hover{
+  width: 112px;
+  background: #0074E9;
+}
+/* 키보드 포커스 스타일링 */
+.button-hTea:focus{
+  outline: 5px solid blue;
+}
+/* 하위 두 카드 그룹 */
+.underCards{
+  display: flex;
+  justify-content: center;
+}
+/* 핸드크림 카드 전체 */
+.kamill-hCream-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* 버튼의 부모요소 역할 */
+  position: relative;
+  /* text-align: center; */
+  background: var(--White, #FFF);
+  box-sizing: border-box;
+  border: 1px solid var(--gray-500, #C4C4C4);
+  
+  padding: 14px 0;
+  width: 243px;
+  height: 310px;
+  margin-top: 20px;
+  margin-right: 7px;
+  transition: border 0.3s;
+}
+/* 핸드크림 카드 호버 시 보더 전환 */
+.kamill-hCream-card:hover {
+  border: 1px solid #0074E9;
+}
+/* 핸드크림 텍스트 설정 */
+.hCream-title{
+  font: 700 18px 'Noto Sans', sans-serif;
+  color: var(--grayscale-gray-5, #555);
+  padding: 12px 0; 
+}
+/* 핸드크림 버튼 설정 */
+.button-hCream{
+  background-image: url(./img/button-inactive.svg);
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+}
+/* 키보드 포커스 스타일링 */
+.button-hCream:focus {
+  outline: 5px solid blue;
+}
+/* 핸드크림 버튼 호버 효과-배경 이미지와 크기 변경 */
+.button-hCream:hover{
+  background-image: url("./img/button-active.svg");
+  width: 112px;
+  height: 42px;
+}
+/* 보리차 카드 전체 설정 */
+.gomgom-bTea-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* 버튼의 부모요소 역할 */
+  position: relative;
+  background: var(--White, #FFF);
+  box-sizing: border-box;
+  border: 1px solid var(--gray-500, #C4C4C4);
+  padding: 14px 0;
+  width: 243px;
+  height: 310px; 
+  margin-top: 20px;
+  margin-left: 7px;
+  transition: border 0.3s;
+}
+/* 보리차 카드 호버 시 보더 전환 */
+.gomgom-bTea-card:hover {
+  border: 1px solid #0074E9;
+}
+/* 보리차 카드 제목 설정 */
+.bTea-title{
+  font-family: Noto Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--grayscale-gray-5, #555);
+  padding: 14px 0;
+}
+/* 보리차 버튼 배경 이미지, 크기 및 위치 설정 */
+.button-bTea {
+  background-image: url(./img/button-inactive.svg);
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+}
+/* 보리차 버튼 호버 효과 */
+.button-bTea:hover {
+  background-image: url("./img/button-active.svg");
+  width: 112px;
+  height: 42px;
+}
+/* 키보드 포커스 스타일링 */
+.button-bTea:focus {
+  outline: 5px solid blue;
+}
+/* .focused-element{
+  outline: 5px solid blue;
+} */
+
